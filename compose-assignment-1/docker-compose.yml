@@ -2,9 +2,7 @@ version: '2.2'
 
 services:
     drupal:
-        build:
-            context: .
-            dockerfile: drupal.Dockerfile
+        image: drupal:9.3.13
         ports:
             - '8080:80'
         volumes:
