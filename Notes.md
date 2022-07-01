@@ -39,10 +39,29 @@ The docker commands to setup this swarm environemnt is in swarm-app-1/mysolution
 ![docker-course-class72-assignent-result](https://user-images.githubusercontent.com/6368537/176723404-985e7e31-69d2-410a-8562-a70d2a4c8bca.PNG)
 ![docker-course-class72-assignent-services](https://user-images.githubusercontent.com/6368537/176723408-28f2c916-2ec7-43d3-bb26-913a6c023364.PNG)
 
-# 81. SWARM life cycle
+## 81. SWARM life cycle
 
 Here he explains how the CI/CD life cycle works. How to use the yml config file to setup an test, staging and product environemnt. Check this class if setting up staging/production environment.
 
 It's possible to override the docker-compose.yml file using docker-compose.override.yml. What it'll do it to read the docker-compose.yml file first and then read the docker-compose.override.yml, overriding what was set by the first and adding the other information.
 
 Make ```docker-compose -f a.yml -f b.yml config``` to generate a yml config file containing both information from a.yml and b.yml.
+
+## 82. Service update
+
+Common commands:
+```
+// update image used to a new version
+docker service update --image myapp:1.2.1 <service name>
+
+// Add an environment variable and remove a port
+docker service update --env-add NODE_ENV=production --publish-rm 8080
+
+//Changing  number of replicas of two services
+docker service scale web=8 api=6
+```
+
+In SWARM updates, there is no different command, only update the yml file and deploy again
+```
+docker stack deploy -c file.yml <stackname>
+```
