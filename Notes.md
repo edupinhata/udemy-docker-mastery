@@ -38,3 +38,7 @@ The docker commands to setup this swarm environemnt is in swarm-app-1/mysolution
 ![docker-course-class72-assignent-front](https://user-images.githubusercontent.com/6368537/176723397-a345c834-e696-4fb3-866f-6d2f81098aaa.PNG)
 ![docker-course-class72-assignent-result](https://user-images.githubusercontent.com/6368537/176723404-985e7e31-69d2-410a-8562-a70d2a4c8bca.PNG)
 ![docker-course-class72-assignent-services](https://user-images.githubusercontent.com/6368537/176723408-28f2c916-2ec7-43d3-bb26-913a6c023364.PNG)
+
+# 81. SWARM life cycle
+
+Here he explains how the CI/CD life cycle works. How to use the yml config file to setup an test, staging and product environemnt. Check this class if setting up staging/production environment
