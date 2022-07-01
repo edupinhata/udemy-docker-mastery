@@ -44,3 +44,5 @@ The docker commands to setup this swarm environemnt is in swarm-app-1/mysolution
 Here he explains how the CI/CD life cycle works. How to use the yml config file to setup an test, staging and product environemnt. Check this class if setting up staging/production environment.
 
 It's possible to override the docker-compose.yml file using docker-compose.override.yml. What it'll do it to read the docker-compose.yml file first and then read the docker-compose.override.yml, overriding what was set by the first and adding the other information.
+
+Make ```docker-compose -f a.yml -f b.yml config``` to generate a yml config file containing both information from a.yml and b.yml.
