@@ -79,3 +79,7 @@ docker stack deploy -c file.yml <stackname>
   - ```docker pull 127.0.0.1:5000/hello-world```
 - Recreating registry using a bind mount and see how it stores data
   - ```docker container run -d -p 5000:5000 --name registry -v $(pdw)/registry-data:/var/lib/registry registry```
+
+## 88. Setup a secure registry server
+
+Use the following [steps](https://training.play-with-docker.com/linux-registry-part2/) to create a HTTPS environment with working Registry. 
