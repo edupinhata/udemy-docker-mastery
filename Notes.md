@@ -233,6 +233,7 @@ Similar to Flexy Swarm, but more workers. And probably need to scale the manager
 ### Pure Open Source Self-Hosted Tech Stacks
 
 Swarm GUI           |   Portainer
+--- | ---
 Central Monitoring  | Prometheus + Grafana
 Central Logging     | ELK
 Layer 7 Proxy       | Flow-Proxy Traefik
@@ -248,6 +249,7 @@ HW / OS             | Infrakit / Terraform
 ### Docker for X: Cheap and Easy Tech Stacks
 
 Swarm GUI           |   Portainer
+--- | ---
 Central Monitoring  | Librato / Sysdig
 Central Logging     |DOcker for AWS/Azure 
 Layer 7 Proxy       | Flow-Proxy Traefik
