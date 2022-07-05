@@ -233,50 +233,30 @@ Similar to Flexy Swarm, but more workers. And probably need to scale the manager
 ### Pure Open Source Self-Hosted Tech Stacks
 
 Swarm GUI           |   Portainer
---- | ---
 Central Monitoring  | Prometheus + Grafana
---- | ---
 Central Logging     | ELK
---- | ---
 Layer 7 Proxy       | Flow-Proxy Traefik
---- | ---
 Registry            | Docker hub
---- | ---
 CI/CD               | Jenkins
---- | ---
 Storage             | REX-Ray
---- | ---
 Networking          | Docker Swarm
---- | ---
 Orchestration       | Docker Swarm
---- | ---
 Runtime             | Docker
---- | ---
 HW / OS             | Infrakit / Terraform
 
 
 ### Docker for X: Cheap and Easy Tech Stacks
 
 Swarm GUI           |   Portainer
---- | ---
 Central Monitoring  | Librato / Sysdig
---- | ---
 Central Logging     |DOcker for AWS/Azure 
---- | ---
 Layer 7 Proxy       | Flow-Proxy Traefik
---- | ---
 Registry            | Docker Hub / Quay
---- | ---
 CI/CD               | Codeship / TravisCI 
---- | ---
 Storage             | Docker for AWS/Azure
---- | ---
 Networking          | Docker Swarm
---- | ---
 Orchestration       | Docker Swarm
---- | ---
 Runtime             | Docker
---- | ---
 HW / OS             | Docker for AWS/Azure
 
 
