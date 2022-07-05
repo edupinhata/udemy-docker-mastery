@@ -329,3 +329,18 @@ HW / OS             | Docker for AWS/Azure
             - Picking solutions isn't 100% rational
             - Trendy, will benefit your career
             - CIO/CTO Checkbox
+
+
+## 99. Basic Terms of kubernetes
+
+- *Kubernetes:* The whole orchestration system
+    - K8s "k-wights" or Kube for short
+- *Kubectl:* CLI to configure Kubernetes and manage apps
+    - Using "cube control" official pronunciation
+- *Node:* Single server in the Kubernetes cluster
+- *Kubelet:* Kubernetes agent running on nodes
+- *Control Plane*: Set of containers that manage the cluster
+    - Includes API sever, shceduler, controller manager, etcd, and more
+    - Sometimes called the "master"
+    - Master: etcd, API, scheduler, Control Manager, CoreDNS
+    - Node: Kubelet, kube-proxy
