@@ -376,3 +376,21 @@ kubectl delete pod/my-apache-xxxx-yyy
 
 ## 109. Exposing Containers
 
+```
+kubectl.exe expose deploy/httpenv --port 8888
+kubectl expose deployment/httpenv --port 8888 --name httpenv-np --type NodePort
+```
+
+**LoadBalancer**
+
+```
+kubectl expose deployment/httpenv --port 8888 --name httpenv-lb --type LoadBalancer
+```
+
+## 112. Namespaces
+
+```
+kubectl get namespaces
+```
+
+
