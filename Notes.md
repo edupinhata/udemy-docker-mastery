@@ -284,3 +284,48 @@ HW / OS             | Docker for AWS/Azure
 - Grow Swarm as you grow
 - Find ways to outsource plumbing
 - Realize parts of your tech stack may change, stay flexible
+
+## 95, 96, 97. Kubernetes
+
+- Kubernetes = popular container orchestrator
+- Container Orchestration = Make many servers act like one
+- Runs on top of Docker (usually) as a set of APIs in containers
+- Provides API/CLI to manage containers across servers
+- Many clouds provide it for you
+
+- Why Kubernetes
+    - Not every solution needs orchestration
+    - Servers + Change Rate = Benefit of orchestration
+    - Decide which orchestration
+    - If Kubernetes, decide which distribution
+        - cloud or self-managed (Docker Enterprise, Rancher, OpenShift, Canonical, VMWare PKS)
+
+- Kubernetes or Swarm?
+    - Both solve same problems
+    - Both are solid platforms
+    - Swarm: easier to deploy/manage
+    - Kubernetes: More features and flexibility
+    - What's right for you? Understand both and know your requirements
+
+    - *Advantages of Swarm*
+        - Comes with docker, single vendor container platform
+        - Easiest orchestrator to deplaoy/manage yourself
+        - Follow 80/20 rule, 20% of features for 80% of use cases
+        - Runs anywhere Docker does
+            - local, cloud, datacenter
+            - ARM, WIndows, 32-bit
+        - Secure by default
+        - Easier to troubleshoot
+        - When you used most of features and you starting feeling that you can not get more of the
+          Swarm, then you might want to move to Kubernetes
+
+    - *Advantages of Kubernetes*
+        - Clouds will deploy/manage Kubernetes for you
+        - Infrastructure vendors are making their own distribution
+        - Widest adoption and community
+        - Flexible: Covers widest set of use cases
+        - "Kubernetes first" vendor support
+        - "No one ever got fired for buying IBM"
+            - Picking solutions isn't 100% rational
+            - Trendy, will benefit your career
+            - CIO/CTO Checkbox
