@@ -344,3 +344,35 @@ HW / OS             | Docker for AWS/Azure
     - Sometimes called the "master"
     - Master: etcd, API, scheduler, Control Manager, CoreDNS
     - Node: Kubelet, kube-proxy
+
+ - *Pod*: one or more containers running together on one Node
+    - Basic unit of deployment. Containers are always in pods
+- *Controller*: For creating/updating pods and other objects
+    - Many types of Controllers inc. Deployment, ReplicaSet, StatefulSet, DaemonSet, Job, CronJob,
+      etc
+- *Service*: network endpoint to connect to a pod
+- *Namespace*: filtered group of objects in cluster
+
+## 105. Cheat sheet for kubernetes commands
+
+```kubectl run nginx --image nginx```: creates a Pod named *nginx* in 1.18+
+ 
+```kubectl create deployment nginx --image nginx```: create a deployment, which crates a ReplicaSet,
+which creates a Pod
+
+```
+kubectl create deployment my-apache --image httpd
+kubectl scale deploy/my-apache --replicas 2
+kubectl scale deployment my-apache --replicas 2 //same as previous
+```
+
+```
+kubectl get pods
+kubectl logs deployment/my-apache --follow --tail 1
+kubectl describe pod/my-apache-xxxx-yyyy
+kubectl get pods -w   //watch pods status
+kubectl delete pod/my-apache-xxxx-yyy
+```
+
+## 109. Exposing Containers
+
