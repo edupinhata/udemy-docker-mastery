@@ -393,4 +393,23 @@ kubectl expose deployment/httpenv --port 8888 --name httpenv-lb --type LoadBalan
 kubectl get namespaces
 ```
 
+## 117. Thre Management Approaches
 
+- **Imperative commands**: run, expose, scale, edit, create deployment
+    - best for dev/learning/personal projects
+    - easy to learn, hardert to manage over time
+- **Imperative objects**: create -f file.yml, replace -f file.yml, delete...
+    - Good for prod of small environments, single file per command
+    - Store your changes in git-based yaml files
+    - Hard to automate
+- **Declarative objects**: apply -f file.tml, or dir\, diff
+    - Best for prod, easier to automate
+    - Harder to understand and predict changes
+
+- **Most importante Rule**: Don't mix the three approaches
+- **Bret's recommendations**:
+    - Learn the Imperative CLI for easy control of local and test setups
+    - Move to apply -f file.yml and apply -f directory\ for prod
+    - Store yaml in git, git commit each change before you apply
+    - This trains you for later doing GitOps (where git commits are automatically applied to
+      clusters)
