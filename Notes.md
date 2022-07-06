@@ -413,3 +413,19 @@ kubectl get namespaces
     - Store yaml in git, git commit each change before you apply
     - This trains you for later doing GitOps (where git commits are automatically applied to
       clusters)
+
+## 121. Building your YAML file
+
+```kubectl api-resources```: get a list of resources that kubectl offers. When
+building the YAML file, use the KIND column to figure out which kind you should use in the YAML
+file.
+
+API Group is Where in the API the resource can be access, created, deleted.
+
+```kubectl api-versions```: get a short lis of diferent API versions we should worry
+about.
+
+```kubectl explain services --recursive```: all the keys each kind supports.
+```kubectl explain services.spec```
+
+
