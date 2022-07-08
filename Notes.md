@@ -428,4 +428,21 @@ about.
 ```kubectl explain services --recursive```: all the keys each kind supports.
 ```kubectl explain services.spec```
 
+## 134. Docker Security
+
+[Bret Fisher security recommendations for Docker on Linux servers](https://github.com/BretFisher/ama/issues/17). This is a checklist that would be good to be followed if 
+
+[Docker bench security](https://github.com/docker/docker-bench-security): tool to check if the
+Docker configuration is right.
+
+
+- Scanning tools:
+    - [snyk](https://snyk.io): scan repo to find vunerabilities
+    - [microscanner](https://github.com/aquasecurity/microscanner): scan inside a container build.
+      This was deprecated in favor of trivy.
+    - [Trivy](https://github.com/aquasecurity/trivy): scan inside a container build.
+    - [Falco](https://sysdig.com/opensource/falco): open source container native runtime security.
+
+
+Remember to use --continue-on-failure, so build are not interrupted when any vulnerability is find.
 
